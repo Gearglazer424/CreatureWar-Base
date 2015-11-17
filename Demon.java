@@ -1,33 +1,28 @@
-
+import java.util.Random;
 /**
- * Write a description of class Demon here.
+ * Write a description of class Elf here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Demon
+public class Demon extends Creature
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Demon
-     */
-    public Demon()
+    int hp;
+    int strength;
+    Random rng;
+public Demon(int hp, int strength){
+    super (0,0);
+    rng = new Random();
+    this.hp = rng.nextInt(10)+5;
+    this.strength = rng.nextInt(25)+10;
+}
+public int damage(){
+    int dam = super.damage();
+    rng = new Random();
+    if (rng.nextFloat() <= 0.05)
     {
-        // initialise instance variables
-        x = 0;
+        dam = dam + 50;
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+        return dam;
+}
 }
