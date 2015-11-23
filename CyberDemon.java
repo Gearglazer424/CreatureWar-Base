@@ -1,6 +1,6 @@
 import java.util.Random;
 /**
- * Write a description of class Elf here.
+ * A generic Demon.
  * 
  * @author (your name) 
  * @version (a version number or a date)
@@ -11,6 +11,7 @@ public class CyberDemon extends Demon
     int strength;
     Random rng;
 public CyberDemon(int hp, int strength){
+    //Constructor for fields
     super (0,0);
     rng = new Random();
     this.hp = rng.nextInt(20)+1;

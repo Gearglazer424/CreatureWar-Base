@@ -1,12 +1,12 @@
 import java.util.Random;
 /**
- * Write a description of class Creature here.
+ * This is the basic structure for all creatures in the game.
  * 
  * @author (Jeremy Hixson) 
  * @version (11/16/2015))
  */
 public class Creature
-//Define fields
+
 {
    private int hp;
    private int strength;
