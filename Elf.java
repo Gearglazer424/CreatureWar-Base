@@ -5,26 +5,24 @@ import java.util.Random;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Elf extends Creature
-{
-     int hp;
-    int strength;
-    Random rng;
-public Elf(int hp, int strength){
-    //Constructor for fields
-    super (0,0);
-    rng = new Random();
-    this.hp = rng.nextInt(20)+1;
-    this.strength = rng.nextInt(15)+1;
-}
-public int damage(){
-    // 10% to double damage
-    int dam = super.damage();
-    rng = new Random();
-    if (rng.nextFloat() <= 0.1)
-    {
-        dam *= 2;
-    }
-        return dam;
-}
-}
+import java.util.Random;  
+   
+ public class Elf extends Creature  
+ {  
+     private int percentChance = 10;
+     public Elf(String n,int hp, int strength)  
+    {  
+        super("Elf", hp, strength);  
+    } 
+public int DealDmg()  
+    {  
+     int dmg = super.DealDmg();  
+     Random rand = new Random();  
+        if((rand.nextInt(100) + 1) <= percentChance)  
+        {  
+            dmg *= 2;  
+            System.out.println(" Magic Damage!");  
+        }  
+          return dmg;  
+    }  
+ }   

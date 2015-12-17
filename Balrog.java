@@ -5,23 +5,21 @@ import java.util.Random;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Balrog extends Demon
-{
-    int hp;
-    int strength;
-    Random rng;
-public Balrog(int hp, int strength){
-    //Constructor for fields
-    super (0,0);
-    rng = new Random();
-    this.hp = rng.nextInt(10)+5;
-    this.strength = rng.nextInt(25)+10;
-}
-public int damage(){
-   // The damage method is called twice.
-   int dmg = 0;
-   dmg += super.damage();
-   dmg += super.damage();
-   return dmg;
-}
-}
+public class Balrog extends Demon  
+ {  
+ 	public Balrog(int hp, int strength)  
+ 	{  
+     	super("Balrog", hp, strength);  
+ 	}  
+ 	  
+ 	public int DealDmg()  
+ 	{  
+     	int dmg1 = super.DealDmg();  
+     	System.out.println(" Attack 1: " + dmg1);  
+     	  
+     	int dmg2 = super.DealDmg();  
+     	System.out.println(" Attack 2: " + dmg2);  
+     	  
+     	return dmg1 + dmg2;  
+ 	}  
+ }   

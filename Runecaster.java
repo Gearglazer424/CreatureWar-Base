@@ -7,19 +7,13 @@ import java.util.Random;
  */
 public class Runecaster extends Elf
 {
-    int hp;
-    int strength;
-    Random rng;
-public Runecaster(int hp, int strength){
-    //Constructor for fields
-    super (0,0);
-    rng = new Random();
-    this.hp = rng.nextInt(20)+1;
-    this.strength = rng.nextInt(15)+1;
-}
+public Runecaster(String n, int hp, int strength)  
+    {  
+        super("Runecaster", hp, strength);  
+    }  
 public int damage(){
    // If damage goes above 30, take no damage.
-   int dam = super.damage();
+   int dam = super.DealDmg();
    if( dam > 30)
    {
        dam = 0;
