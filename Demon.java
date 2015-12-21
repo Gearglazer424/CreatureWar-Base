@@ -9,11 +9,17 @@ import java.util.Random;
  {  
     private int percentChance = 5;  
       
-    public Demon(String n, int hp, int strength)  
+    public Demon(int hp, int strength)  
     {  
         super("Demon", hp, strength);  
     }  
-      
+    
+    
+      public Demon(String n,int hp, int strength)  
+    {  
+        super("Demon", hp, strength);  
+    }  
+    
     public int DealDmg()  
     {  
         int dmg = super.DealDmg();  

@@ -10,7 +10,12 @@ import java.util.Random;
  public class Elf extends Creature  
  {  
      private int percentChance = 10;
-     public Elf(String n,int hp, int strength)  
+    
+      public Elf(int hp, int strength)  
+    {  
+        super("Elf", hp, strength);  
+    } 
+    public Elf(String n,int hp, int strength)  
     {  
         super("Elf", hp, strength);  
     } 

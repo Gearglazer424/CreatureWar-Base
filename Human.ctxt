@@ -1,4 +1,6 @@
 #BlueJ class context
-comment0.params=n\ hp\ strength
-comment0.target=Human(java.lang.String,\ int,\ int)
-numComments=1
+comment0.params=hp\ strength
+comment0.target=Human(int,\ int)
+comment1.params=n\ hp\ strength
+comment1.target=Human(java.lang.String,\ int,\ int)
+numComments=2

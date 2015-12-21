@@ -7,7 +7,7 @@ import java.util.Random;
  */
 public class Runecaster extends Elf
 {
-public Runecaster(String n, int hp, int strength)  
+public Runecaster(int hp, int strength)  
     {  
         super("Runecaster", hp, strength);  
     }  

@@ -3,7 +3,11 @@
  */
 public class Human extends Creature  
  {  
- 	public Human(String n,int hp, int strength)  
+ 	public Human(int hp, int strength)  
+ {  
+     	super("Human", hp, strength);  
+ }  
+ public Human(String n,int hp, int strength)  
  {  
      	super("Human", hp, strength);  
  }  

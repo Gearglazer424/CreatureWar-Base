@@ -11,6 +11,11 @@ public class Balrog extends Demon
  	{  
      	super("Balrog", hp, strength);  
  	}  
+ 	
+ 	public Balrog(String name, int hp, int strength)  
+ 	{  
+     	super(name, hp, strength);  
+ 	}  
  	  
  	public int DealDmg()  
  	{  

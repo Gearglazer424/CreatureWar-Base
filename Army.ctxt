@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=size
+comment0.target=Army(int)
+comment1.params=size
+comment1.target=void\ BuildArmy(int)
+comment2.params=
+comment2.target=void\ DisplayArmy()
+comment3.params=i
+comment3.target=void\ DisplayTroop(int)
+comment4.params=i
+comment4.target=int\ Attack(int)
+comment5.params=i\ dmg
+comment5.target=boolean\ Defend(int,\ int)
+comment6.params=
+comment6.target=int\ GetSize()
+numComments=7
